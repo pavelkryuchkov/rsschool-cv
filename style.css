@@ -1,6 +1,5 @@
 :root {
   scroll-behavior: smooth;
-  overflow: auto;
 }
 
 body {
@@ -17,6 +16,7 @@ body {
   min-width: 700px;
   max-width: 1000px;
   margin: 0px auto;
+  overflow: hidden;
 }
 
 .header {
@@ -47,7 +47,7 @@ body {
 }
 
 .main {
-  padding: 0px 10px;
+  padding: 0px 20px;
 }
 
 .profile {
@@ -125,13 +125,12 @@ body {
   border: 2px solid hsl(202, 40%, 50%);
 }
 
-.code code {
-  font-size: 16px;
-}
-
 .code pre {
-  /* margin-left: -90px; */
+  margin-left: -90px;
+  margin-top: -20px;
+  margin-bottom: -30px;
   overflow: auto;
+  font-size: 16px;
 }
 
 .footer {
@@ -150,6 +149,11 @@ body {
   margin-left: 20px;
   text-decoration: none;
   color: black;
+}
+
+.github-link > img {
+  vertical-align: middle;
+  margin-right: -2px;
 }
 
 .rsschool-link {

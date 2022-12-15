@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>CV</title>
 </head>
 
 <body>
@@ -58,28 +58,30 @@
         <h2>Code</h2>
         <p><a href="https://www.codewars.com/kata/5842df8ccbd22792a4000245">Write Number in Expanded Form</a> from
           Codewars: You will be given a number and you will need to return it as a string in Expanded. For example:</p>
-        <code>
-          <pre>
+        <pre>
+          <code>
             expandedForm(12); // Should return '10 + 2'
             expandedForm(42); // Should return '40 + 2'
-            expandedForm(70304); // Should return '70000 + 300 + 4'</pre>
-        </code>
+            expandedForm(70304); // Should return '70000 + 300 + 4'
+          </code>
+        </pre>
         <p>NOTE: All numbers will be whole numbers greater than 0.</p>
-        <code>
-          <pre>
+        <pre>
+          <code>
             function expandedForm(num) {
               let res = [];
               let numLen = String(num).length;
               for (digit of String(num)) {
                 if (digit === '0') {
-                  numLen--;
-                  continue;
+                    numLen--;
+                    continue;
                 }
                 res.push(digit.padEnd(numLen--, '0'));
               }
               return res.join(' + ');
-            }</pre>
-        </code>
+            }
+          </code>
+        </pre>
       </section>
       <section class="cv-section projects" id="projects">
         <h2>Projects</h2>
@@ -101,7 +103,10 @@
     </main>
     <footer class="footer">
       <span class="footer__year">&#169; 2022</span>
-      <a class="github-link" href="https://github.com/pavelkryuchkov">pavelkryuchkov</a>
+      <a class="github-link" href="https://github.com/pavelkryuchkov">
+        <img src="images/github-mark.svg" alt="github logo" width="20">
+        pavelkryuchkov
+      </a>
       <a class="rsschool-link" href="https://rs.school/js/">
         <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool" width="100">
       </a>
