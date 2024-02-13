@@ -3,8 +3,6 @@
 ## Contacts
 
 - **Location:** Moscow, Russia
-- **Phone number:** + 7 (906) 785-96-16
-- **E-mail:** pavel.kryuchkov@list.ru
 
 ## About me
 
