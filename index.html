@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="navigation">
+        <ul>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#languages">Languages</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="profile">
+        <!-- <div class="avatar">
+          <div class="avatar__image"></div>
+        </div> -->
+        <img class="profile__photo" src="images/my_photo.jpg" alt="CV photo">
+        <div class="profile__info">
+          <h1>Pavel Kryuchkov</h1>
+          <p>Junior Front-end Developer</p>
+        </div>
+      </div>
+      <section class="cv-section contacts" id="contacts">
+        <h2>Contacts</h2>
+        <ul>
+          <li>Location: Moscow, Russia</li>
+        </ul>
+      </section>
+      <section class="cv-section summary" id="summary">
+        <h2>Summary</h2>
+        <p>I want to become a front-end web developer and find new exciting and interesting job.</p>
+      </section>
+      <section class="cv-section skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+      <section class="cv-section code" id="code">
+        <h2>Code</h2>
+        <p><a href="https://www.codewars.com/kata/5842df8ccbd22792a4000245">Write Number in Expanded Form</a> from
+          Codewars: You will be given a number and you will need to return it as a string in Expanded. For example:</p>
+        <pre>
+          <code>
+            expandedForm(12); // Should return '10 + 2'
+            expandedForm(42); // Should return '40 + 2'
+            expandedForm(70304); // Should return '70000 + 300 + 4'
+          </code>
+        </pre>
+        <p>NOTE: All numbers will be whole numbers greater than 0.</p>
+        <pre>
+          <code>
+            function expandedForm(num) {
+              let res = [];
+              let numLen = String(num).length;
+              for (digit of String(num)) {
+                if (digit === '0') {
+                    numLen--;
+                    continue;
+                }
+                res.push(digit.padEnd(numLen--, '0'));
+              }
+              return res.join(' + ');
+            }
+          </code>
+        </pre>
+      </section>
+      <section class="cv-section projects" id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="https://pavelkryuchkov.github.io/rsschool-cv/">CV</a></li>
+        </ul>
+      </section>
+      <section class="cv-section education" id="education">
+        <h2>Education</h2>
+        <p>Financial University under the Government of the Russian Federation</p>
+      </section>
+      <section class="cv-section languages" id="languages">
+        <h2>Languages</h2>
+        <ul>
+          <li>Russian Native</li>
+          <li>English Intermediate</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <span class="footer__year">&#169; 2022</span>
+      <a class="github-link" href="https://github.com/pavelkryuchkov">
+        <img src="images/github-mark.svg" alt="github logo" width="20">
+        pavelkryuchkov
+      </a>
+      <a class="rsschool-link" href="https://rs.school/js/">
+        <img src="https://rs.school/images/rs_school_js.svg" alt="rsschool" width="100">
+      </a>
+    </footer>
+  </div>
+</body>
+
+</html>
